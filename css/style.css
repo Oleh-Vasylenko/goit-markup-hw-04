@@ -92,6 +92,25 @@ body {
 .header-contacts-link:focus {
   color: var(--accent-color);
 }
+.header-contacts-link::before {
+  display: inline-block;
+  margin-right: 10px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+  vertical-align: middle;
+}
+.tel-icon::before {
+  height: 16px;
+  width: 10px;
+  background-image: url(../images/svg/Vector.svg);
+}
+.mail-icon::before {
+  height: 12px;
+  width: 16px;
+  background-image: url(../images/svg/envelope.svg);
+}
 
 /* Navigation  */
 
@@ -166,8 +185,20 @@ body {
   padding-bottom: 200px;
 
   text-align: center;
-
   background-color: var(--footer-color);
+}
+
+.hero.background {
+  max-width: 1600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/header/main.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
