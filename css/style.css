@@ -1,0 +1,485 @@
+:root {
+  --text-color: #757575;
+  --text-bold-color: #212121;
+  --transparent-text-color: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --hero-button-hover-color: #188ce8;
+  --footer-color: #2f303a;
+  --gray-background: #f5f4fa;
+  --header-line-color: #ececec;
+  --white: #fff;
+}
+
+/* defaults */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+
+  color: var(--text-color);
+  background-color: var(--white);
+}
+
+/* Containers */
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+}
+
+/* Header */
+
+.page-header {
+  border-bottom: 1px solid var(--header-line-color);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.container.header {
+  display: flex;
+}
+
+.logo-header {
+  display: flex;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  text-decoration: none;
+
+  color: #000000;
+}
+
+.logo-header-accent {
+  color: var(--accent-color);
+}
+
+.header-contacts-list {
+  display: flex;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+
+  list-style: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+}
+
+.header-contacts-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contacts-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--accent-color);
+}
+
+/* Navigation  */
+
+.site-nav-list {
+  display: flex;
+
+  margin-left: 93px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+}
+
+.site-nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav-link {
+  display: block;
+  padding: 32px 0;
+
+  text-decoration: none;
+  color: var(--text-bold-color);
+}
+
+.site-nav-link.current {
+  color: var(--accent-color);
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--accent-color);
+}
+
+/* Sections */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 94px;
+}
+
+.section.gray-background {
+  background-color: var(--gray-background);
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  color: var(--text-bold-color);
+}
+
+/* Hero section */
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+
+  background-color: var(--footer-color);
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--white);
+}
+
+.button {
+  background-color: var(--gray-background);
+
+  cursor: pointer;
+}
+
+.hero.button {
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  min-width: 200px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.hero.button:hover,
+.hero.button:focus {
+  background-color: var(--hero-button-hover-color);
+}
+
+/* Features section*/
+
+.container.features {
+  display: flex;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.features-list {
+  display: flex;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-list .item {
+  width: 270px;
+}
+
+.features-list .feature {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: var(--text-bold-color);
+}
+
+.feature-description {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  line-height: 1.71;
+}
+
+/* Doings section */
+
+.doings-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.doings-list .item:not(last-child) {
+  margin-right: 30px;
+}
+
+.doings-image {
+  display: block;
+}
+
+/* Our Team section */
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.team-list .item {
+  margin-right: 30px;
+}
+
+.team-list .item:nth-child(4n + 4) {
+  margin-right: 0px;
+}
+
+.member-image {
+  display: block;
+}
+
+.member-info {
+  padding: 30px 24px;
+  background-color: var(--white);
+}
+
+.member-info .team-member {
+  margin-bottom: 10px;
+  margin-top: 0;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+  font-weight: 500;
+
+  color: var(--text-bold-color);
+}
+
+.job-title {
+  margin-bottom: 0;
+  padding: 0 24px;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-top: 0px;
+}
+
+/* Footer */
+
+.page-footer {
+  padding: 60px 0;
+
+  background-color: var(--footer-color);
+}
+
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: var(--white);
+}
+
+.footer-logo-accent {
+  color: var(--accent-color);
+}
+
+.footer-address {
+  margin-top: 20px;
+  font-style: normal;
+
+  color: var(--white);
+}
+
+.footer-links-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.footer-links-list .list-item {
+  margin-top: 9px;
+}
+
+.footer-address-link {
+  text-decoration: none;
+
+  color: var(--transparent-text-color);
+}
+
+.footer-address-link:hover,
+.footer-address-link:focus {
+  color: var(--accent-color);
+}
+
+/* Portfolio page */
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  list-style: none;
+}
+
+.filter.button {
+  padding: 6px 22px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+
+  border: none;
+  border-radius: 4px;
+
+  color: var(--text-bold-color);
+}
+
+.filter-list .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter.button:hover,
+.filter.button:focus {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.portfolio-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  list-style: none;
+}
+
+.portfolio-list .description {
+  padding: 20px 24px;
+}
+
+.portfolio-list .item {
+  /* evenly divide the width by 3 including margins. 
+  We have two margins-right applied, third one is denied with 
+  .item:nth-child(3n). */
+  width: calc((100% - 2 * 30px) / 3);
+
+  margin-right: 30px;
+  border-right: 1px solid var(--header-line-color);
+  border-left: 1px solid var(--header-line-color);
+  border-bottom: 1px solid var(--header-line-color);
+}
+
+/* remove tiny inline margin defect from <a> element */
+.portfolio-list .item a {
+  display: block;
+}
+
+.portfolio-list .item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+/* add margin-botttom up to and inluding sixth element, no margin for further elements */
+.portfolio-list .item:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+
+.portfolio-img {
+  display: block;
+}
+
+.portfolio-item-title {
+  padding: 0;
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--text-bold-color);
+}
+
+.portfolio-item-description {
+  padding: 0;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.87;
+}
